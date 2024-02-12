@@ -25,3 +25,4 @@ yay -S texinfo texlive-basic texlive-bin texlive-binextra texlive-fontsrecommend
 
 
 
+

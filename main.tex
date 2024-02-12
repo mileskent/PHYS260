@@ -1,4 +1,4 @@
-\documentclass[10pt, twocolumn]{article}
+\documentclass[10pt, a4paper, twocolumn]{article}
 
 \input{structure.tex}
 
@@ -10,14 +10,67 @@
 \begin{document}
 \maketitle
 
-    \section{Electrostatic Force Basics}    
+    \section{Electrostatics Basics}    
+        \subsection{Introduction}
+            \begin{enumerate}
+                \item {
+                    As you may know, matter is made of atoms.
+                    Atoms have a nucleus, which is made up of protons (positive) and neutrons (neutral), and electrons (negative).
+                    Opposite charges are attracted to one another with a inverse square force, and like charges are similarly repelled.
+                }
+                \item {
+                    The electrons\footnote{Not \textit{all} of the electrons in a conductor can move, it's just that the ones that don't move can be ignored because they do not contribute to the net charge of a material} in conductors are able to move freely, while in insulators they cannot unless they come off entirely
+                }
+                \item {
+                    Some materials tend to give off electrons (e.g. fur) and some tend to attract them (e.g. plastic)   
+                }
+                \item {
+                    Not all metals are conductors
+                }
+                \item {
+                    A neutral object can be attracted to a charged object via inducted polarity. In a conductor, this means the electrons move through the entire object to create a dipole. In an insulator, the electrons of the atoms realign to create billions of of tiny dipoles. This makes a difference due to the inverse square law, which will be discussed further later. The former creates a strong attraction, while the latter creates a weak attraction.
+                }
+            \end{enumerate}
+        \subsection{Electrical Grounding}
+            An object can be "grounded" by connecting it to a big conductor, which serves as a resevoir for charge, e.g. you can ground the wall outlet by sticking a fork into it. The gruond in this case is you body and the ground. The electricity from the wall will flow through your body and into the ground
+
 
     \section{Coulomb's Law}    
+        The magnitude of the force between two point charges $q_1$ and $q_2$ C, with distance $r$ m is equal to the following
+        \begin{align*} 
+            F = \frac{1}{4\pi \epsilon_0} \frac{|q_1 \cdot q_2|}{r^2}
+        \end{align*} 
+        \begin{itemize}
+            \item where $\epsilon_0$ is vacuum permittivity, the value of the absolute dielectric permittivity of classical vacuum, or also just "the electric constant".  
+            \item $\epsilon_0 \approx 8.854189 \cdot 10^{-12}$ 
+            \item the Coulomb constant $k = \frac{1}{4\pi \epsilon_0}$
+            \item electric forces add as vectors, which is called the "Superposition Principle"
+        \end{itemize}
 
-    \section{Electric Field Integrations}    
 
-        \subsection{Lines of Charge}    
-        \subsection{Sheets of Charge}    
+    \section{Electric Fields}
+        \begin{itemize}
+            \item Electric Fields are best represented by vector fields
+
+            \item For the electric field of a point charge\\ $\vec{F} = q \vec{E} \rightarrow E = \frac{F}{q} \rightarrow E = \frac{1}{4\pi \epsilon_0} \frac{q}{r^2} = \frac{kq}{r^2}\ \frac{N}{C}$
+
+            \item Field lines do not indicate the trajectory of a test charge, but rather are lines tangent to the electric field at a given point
+        \end{itemize}
+
+        \subsection{Electric Field Integrations}    
+            As it turns out, it is unrealistic to use Coulomb's Law just by itself to calculate the electric field at a point. This would require knowing the location and charge of every charge in an object. One way this problem can be simplified is with the use of charge density and calculus. 
+            \begin{itemize}
+                \item Linear density: $\lambda = \frac{Q}{L}$
+                \item Area density: $\sigma = \frac{Q}{A}$
+                \item Volumetric density: $\rho = \frac{Q}{V}$
+            \end{itemize}
+
+        \subsubsection{Lines of Charge}    
+        Finite line
+        Infinite line
+        \subsubsection{Sheets of Charge}    
+        Finite sheet (circle)
+        Infinite sheet
 
     \section{Dipoles}    
 
