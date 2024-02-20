@@ -65,15 +65,28 @@
                 \item Volumetric density: $\rho = \frac{Q}{V}$
             \end{itemize}
 
-        \subsubsection{Lines of Charge}    
-        Finite line
-        Infinite line
-        \subsubsection{Sheets of Charge}    
-        Finite sheet (circle)
-        Infinite sheet
+            Basically, what you do is find the ds/dA/dV and you multiply it times the charge density to get the dQ. You then usually use the point charge electric field formula and integrate it over the relevant domain. When the differential is a point charge, you usually need to make sure you aren't summing magnitudes. However, if the differential you are given is an area, this has probably already been taken care of.\\
 
-    \section{Dipoles}    
+            \textbf{Infinite Sheet of Charge}
+            $$|\vec{E}| = \frac{\sigma}{2\epsilon_0}$$\\
+
+        \textbf{\footnote{The field due to \textit{everything}}{Near the Surface of a Conductor}}
+            $$|\vec{E}| = \frac{\sigma}{\epsilon_0}$$\\
 
     \section{Gauss' Law}
+    $$\Phi = \oint \vec{E} \cdot d\vec{A} = \oint \vec{E} \cdot \hat{n}\ dA = \frac{Q_{net}}{\epsilon_0}$$\\
+    The above equation is Gauss' Law, which states that the flux through a surface is a measure of how orthogonally an electric field passes through a surface. Positive flux means that the passing it outward, while negative flux means that it is inward (overall). Finding flux is useful because it is proportional to the net charge of within the surface of the integral. The surface used in the integral typically is not a real surface, but a contrived one, used for determining the net charge of what it encloses. It is called a Gaussian Surface and is usually a rectangular prism, cylinder, or sphere, depending on what is most convienient.\\ \\
+    Furthermore, if the electric field is uniform and the angle between the field and the surface is constant, then the following applies.\\
+    $$\Phi = \vec{E} \cdot \vec{A} = EAcos(\theta) = \frac{Q_{net}}{\epsilon_0}$$\\ 
+    where $\theta$ is the angle between the electric field and the normal vector $\hat{n}$\\
+
+        \subsection{Flux}
+        Based on the previous simplified equation, it becomes obvious that the units of flux are $\frac{N}{C} \cdot{m^2}$. If you think about the electric field as the flowing of water, in a river perhaps, then flux is like a measure of that flow times an area, i.e. a rate of volume. Obviously, an electric field is, in fact, not flowing water, but this analogy is useful.
+
+
+    \section{Dipoles}    
+        
+
+
 
 \end{document}
