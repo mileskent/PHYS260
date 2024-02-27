@@ -92,14 +92,62 @@
     $W = \int^{\phi_2}_{\phi_1} (-pEsin(\phi))d\phi = pE(cos(\phi_2) - cos(\phi_1))$
     $U(\phi) = -\vec{p} \cdot \vec{E} = -pEcos(\phi)$\\ \\
 
-\textbf{\huge Chapters 23-24}
+\textbf{\huge Chapters 23-25}
+% 23
     \section{Electric Potential Energy}	
+        Recall: Work done by a conservative force is equal to the following
+        $$W_{a\rightarrow b} = -\Delta U$$
+        Recall: Electrostatic force
+        $$F_e = qE$$
+        Therefore, in a uniform electric field between parallel plates
+        $$U = (qE)y$$
+        $$W_{a \rightarrow b} = F_e d = (qE)\delta y$$
+        For a point charge
+        $$F = \frac{1}{4 \pi \epsilon_0} \frac{q q_0}{r^2}$$
+        $$U = \frac{1}{4 \pi \epsilon_0} \frac{q q_0}{r}$$
+        Superposition applies
+        $$U = \frac{q_0}{4 \pi \epsilon_0} \Sigma_{i} \frac{q_i}{r_i}$$
+
     \section{Electric Potential}	
-    \section{Equipotential Surfaces}	
-    \section{Finding Electric Fields from Electric Potential}	
+        Potential is just potential energy per unit charge
+        $$V = \frac{U}{q_0}$$
+        $$U = q_0 V$$
+        The units are volts ($V$, $\frac{J}{C}$)
+        The potential difference $\Delta V$ is also called voltage. It is equal to the work in joules that must be done to move a 1 couloumb charge from a to b against the electric force.
+        $$\frac{W_{a \rightarrow b}}{q_0} = \frac{-\Delta U}{q_0} = -\Delta V$$
+        Usually since a and b are arbitrary, the voltage is usually given as an absolute value\\
+        A 9V battery has a potential difference or voltage of 9V which means that the difference between the positive and negative terminals is 9V\\
+        The electric potential due to a point charge:
+        $$V = \frac{1}{4 \pi \epsilon_0} \frac{q}{r} = \frac{U}{q_0}$$
+        Accordingly:
+        $$V = \frac{1}{4 \pi \epsilon_0} \Sigma_{i} \frac{q_i}{r_i}$$
+        $$V = \frac{1}{4 \pi \epsilon_0} \int \frac{dq}{r}$$
+        The electric potential due to a field $\vec{E}$
+        $$W_{a \rightarrow b} = \int^{b}_{a} \vec{F} \cdot d \vec{l} = \int^{b}_{a} q_0 \vec{E} \cdot d \vec{l}  $$
+        Divide by $q_0$
+        $$-\Delta V = \int^{b}_{a} \vec{E} \cdot d \vec{l} = \int^{b}_{a} Ecos\phi\ dl  $$
+        ito $\vec{E}$ we get:
+        $$\vec{E} = -\nabla V$$
+        Think of just
+        $$-\Delta V = \int^{b}_{a} E_x dx$$
+        $$-\int^{b}_{a} dV = \int^{b}_{a} E_x dx$$
+        $$-dV = E_x dx$$
+        $$-\frac{dV}{dx} = E_x$$
+        If you do for y, z then you get negative gradient
+
+    %\section{Equipotential Surfaces}	
+    %\section{Finding Electric Fields from Electric Potential}	
+% 24
     \section{Capacitors and Capacitance}	
     \section{Capitors in Series and Parallel}	
     \section{Energy in a Capacitor}	
     \section{Dielectrics}	
+% 25
+    \section{Current \& Current Density}	
+    \section{Resistivity}	
+    \section{Resistors}	
+    \section{Circuits and EMF}	
+    \section{Energy \& Power in Circuits}	
+    \section{Conduction in Metals}	
 
 \end{document}
