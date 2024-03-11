@@ -1,13 +1,14 @@
 \documentclass[10pt, a4paper, twocolumn]{article}
 
 \input{structure.tex}
-
+\hbadness=10000
 % TITLE PAGE
 \title{PHYS 260 Electromagnetism}
 \author{\authorstyle{Miles Kent}}
 \date{}
-
 \begin{document}
+\graphicspath{ {./images/} }
+
 \maketitle
 
 \textbf{\huge Chapters 21-22}
@@ -135,8 +136,15 @@
         $$-\frac{dV}{dx} = E_x$$
         If you do for y, z then you get negative gradient
 
-    %\section{Equipotential Surfaces}	
-    %\section{Finding Electric Fields from Electric Potential}	
+    \section{Equipotential Surfaces}	
+        Equipotential surfaces for electric fields can be entirely generalized to the idea of a topographical map.
+        \begin{figure}[H]
+            \includegraphics[width=\linewidth]{topo-map} % Figure image
+            \caption{Topographical map} % Figure caption
+        \end{figure}
+
+        Because of $\vec{E} = -\nabla V$, given that the topographical lines are like potential lines, the field lines are perpindicular and in the downhill direction. These could be imagined as the lines of errosion. 
+
 % 24
     \section{Capacitors and Capacitance}	
     Any two conductors separated by an insulator (or \footnote{vaccuum}{i.e. not a conductor})
@@ -148,6 +156,7 @@
     \section{Resistivity}	
     \section{Resistors}	
     \section{Circuits and EMF}	
+        EMF $\Delta V$ is $\mathcal{E}$
     \section{Energy \& Power in Circuits}	
     \section{Conduction in Metals}	
 % 26
