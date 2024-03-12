@@ -147,14 +147,57 @@
 
 % 24
     \section{Capacitors and Capacitance}	
-    A \textbf{capacitor} is any two conductors separated by an insulator (or vaccum\footnote{i.e. not a conductor}). It is usually used to store energy in the electric field between the plates.\\\\
-    Capacitance is defined as: $E$
+    A \textbf{capacitor} is any two conductors separated by an insulator (or vaccum\footnote{i.e. not a conductor}). It is usually used to store energy in the electric field between the plates. We basically just assume that all capacitors are parallel plate capacitors for simplicity. A parallel plate capacitor has oppositely charged plates.
 
-    \section{Capitors in Series and Parallel}	
+    $$|\vec{E}_{capacitor}| = \frac{\sigma}{\epsilon_0} = \frac{Q}{\epsilon_0 A}\ ; | d << L$$
+
+    \textbf{Capacitance} is the capability of a material object or device to store electric charge. It is based on the geometry of the capacitor. It's units are Farads (F, $\frac{C}{V}$)
+
+    $$C = \frac{Q}{\Delta V} = \frac{\epsilon_0 A}{d}$$ 
+
+
+    \section{Capacitors in Series and Parallel}	
+        Capacitors in a circuit can be combined into an equivalent capacitor in order to simplify problems.
+        \subsection{Capacitors in Series}
+        $$C_{equivalent} = C_1 + C_2 + ...$$
+        \subsection{Capacitors in Parallel}
+        $$\frac{1}{C_{equivalent}} = \frac{1}{C_1} + \frac{1}{C_2} + ...$$
     \section{Energy in a Capacitor}	
+        Energy in Capacitor
+        $$U_{capacitor} = \frac{1}{2}Q \Delta V = \frac{1}{2} \frac{Q^2}{C} = \frac{1}{2} C V^2$$
+
+        Energy Density in Capacitor
+        $$u = \frac{U_{capacitor}}{Volume} = \frac{\epsilon_0 E^2}{2}$$
     \section{Dielectrics}	
+        When you put an insulator between the plates of a parallel plate capacitor.
+
+        The capacitance for a capacitor with a dielectric with dielectric constant $k$:
+        $$C = \frac{k \epsilon_0 A}{d}$$
+
+        Having a dielectric lowers the field within the capacitor and it increases the capacitance.
 % 25
-    \section{Current \& Current Density}	
+    \section{Current}	
+        \textbf{Current} is the rate at which charge passes through a given cross-sectional area. It "flows" in the opposite direction of the actual flow of electrons in the circuit.
+
+        It's units are Amperes ($A$, $\frac{C}{s}$)
+
+        $$I = \frac{dQ}{dt}$$
+
+        \subsection{Current Density}
+            Current density is the current per unit area. In terms of $I$, it is:
+            $$I = \int_{Area} \vec{J} \cdot d \vec{A}$$
+
+            If J is constant and parallel to $d \vec{A}$, then:
+            $$I = JA$$
+    \section{Drift Velocity}
+        When electrons flow through a wire, they don't go directly parallel to the direction of the wire. Instead, they randomly bounce around within the wire. If a circuit is completed, there will be a field created and the electrons will start to overall drift at a certain velocity. Even though their actual velocity is very high (avg $10^6$ m/s), the drift velocity is very slow (avg $10^{-4}$ m/s).
+
+        $\vec{v}_{drift} = \frac{\vec{J}}{nq}$
+
+        if uniform J, 
+
+        $\vec{v}_{drift} = \frac{I}{nqA}$
+
     \section{Resistivity}	
     \section{Resistors}	
     \section{Circuits and EMF}	
