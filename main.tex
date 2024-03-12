@@ -157,6 +157,8 @@
 
 
     \section{Capacitors in Series and Parallel}	
+% From here on I just use my notes
+% Note to go back and add stuff from tb
         Capacitors in a circuit can be combined into an equivalent capacitor in order to simplify problems.
         \subsection{Capacitors in Series}
         $$C_{equivalent} = C_1 + C_2 + ...$$
@@ -191,15 +193,25 @@
             $$I = JA$$
     \section{Drift Velocity}
         When electrons flow through a wire, they don't go directly parallel to the direction of the wire. Instead, they randomly bounce around within the wire. If a circuit is completed, there will be a field created and the electrons will start to overall drift at a certain velocity. Even though their actual velocity is very high (avg $10^6$ m/s), the drift velocity is very slow (avg $10^{-4}$ m/s).
-
-        $\vec{v}_{drift} = \frac{\vec{J}}{nq}$
-
-        if uniform J, 
-
-        $\vec{v}_{drift} = \frac{I}{nqA}$
+        $$\vec{v}_{drift} = \frac{\vec{J}}{nq}$$
+        if uniform J, then\\
+        $$\vec{v}_{drift} = \frac{I}{nqA}$$
 
     \section{Resistivity}	
+        $\vec{J}$ always depends on $\vec{E}$ and the properties of the material. However, in certain materials at particular tempuratures, the relationship is simply proportional. This is called \textbf{Ohm's Law}. It is an idealized model like Hooke's Law.\\\\
+        \textbf{Resisitivity} is the ratio of the electric field to the current density. It's units are $\frac{\frac{V}{m}}{\frac{A}{m^2}} = \Omega \cdot m$
+        $$\rho = \frac{E}{J}$$ 
+        Furthermore, the reciprocal of resistivity is conductivity $(\Omega \cdot m)^{-1}$. So you can think of resistivity as the opposite of conductivity.\\
+        \begin{figure}[H]
+            \includegraphics[width=\linewidth]{resistivities} % Figure image
+            \caption{Resistivities at $20^{\circ}$C} % Figure caption
+        \end{figure}
+%        Resitivity has the following relationship with tempurature. However, it is probably not going to be tested on.
+%        $$\rho(T) = \rho_0 (1 + \alpha(T-T_0))$$
+        
+
     \section{Resistors}	
+        
     \section{Circuits and EMF}	
         EMF $\Delta V$ is $\mathcal{E}$
     \section{Energy \& Power in Circuits}	
