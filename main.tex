@@ -211,22 +211,88 @@
         
 
     \section{Resistors}	
+        $$\vec{E} = \rho \vec{J}$$
+        $$R = \frac{\rho L}{A_X}$$
+        $$\Delta V = IR$$
         
     \section{Circuits and EMF}	
-        EMF $\Delta V$ is $\mathcal{E}$
+        The symbol for EMF is $\mathcal{E}$\\
+        $$\Delta V_{Terminal} = \mathcal{E} - I r_{int}$$\\
+        Accordingly, where $R_{eq}$ is the equivalent resistance of all of the resistors in the ciruit besides $r_{int}$:
+        $$\Delta V_{Terminal} - I R_{eq} = 0$$\\
+        $$\mathcal{E} - I r_{int} - I R_{eq} = 0$$\\
+        $$I = \frac{\mathcal{E}}{(r_{int} + R_{eq})}$$\\
+        
+        Explanation for why $\Sigma \vec{E} = \vec{0}$ for a conductor with an open loop, but when the loop is closed, then it can have a net electric field:\\
+        \begin{figure}[H]
+            \includegraphics[width=0.35\textwidth]{25-11-A} % Figure image
+        \end{figure}
+
+        \begin{figure}[H]
+            \includegraphics[width=0.35\textwidth]{25-11-B} % Figure image
+        \end{figure}
+
+        \begin{figure}[H]
+            \includegraphics[width=0.9\linewidth]{25-11-C} % Figure image
+        \end{figure}
+
     \section{Energy \& Power in Circuits}	
-    \section{Conduction in Metals}	
+        Power dissipated by a resistor:\\
+        $$P_{res} = I_{res} \Delta V_{res} = I^2_{res} R_{res} = \frac{\Delta V^2_{res}}{R_{res}}$$
+    %\section{Conduction in Metals}	
 % 26
     \section{Resistors in Series and Parallel}
+        Many resistors in a circuit can be represented by one equivalent resistor.
+        \subsection{Resistors in Series}
+            $$R_{eq} = R_0 + R_1 + R_2 + ...$$
+        \subsection{Resistors in Parallel}
+        $$\frac{1}{R_{eq}} = \frac{1}{R_0} + \frac{1}{R_1} + \frac{1}{R_2} + ...$$ 
+        So basically:\\
+        $$R_{eq} = \frac{1}{\frac{1}{R_0} + \frac{1}{R_1} + \frac{1}{R_2} + ...}$$ 
     \section{Kirchhoff's Rules}
+        \subsection{Junction Rule}
+            $$\Sigma I = 0$$
+            \begin{figure}[H]
+                \includegraphics[width=0.5\linewidth]{junctionrule} % Figure image
+                \caption{Current that goes into a junction must leave the junction}
+            \end{figure}
+        \subsection{Loop Rule}
+            $$\Sigma \Delta V = 0$$
+            \begin{figure}[H]
+                \includegraphics[width=0.5\linewidth]{looprule} % Figure image
+                \caption{The sum of the charge in voltage across a circuit loop will always be zero. So for loop 2 (let's change the rotation direction) we get this equation: $\Sigma \Delta V = 0 = \mathcal{E}_1 - I r_1 - I r_2 - \mathcal{E}_2$}
+            \end{figure}
     \section{Electrical Measuring Instruments}
+        \subsection{Voltmeter}
+            Voltmeter reads the difference in potential (voltage) between its probes. It has a really high resistance, so you usually assume that no current can flow through it. Accordingly, you put it in parallel with circuit elements.
+        \subsection{Ammeter}
+            Ammeter reads current and usually has a neglibly small resistance. Accordingly, you put it in series with circuit elements.
     \section{R-C Circuits}
-    \section{Power Distribution Systems}
+        An RC circuit is a circuit like the one below.\\
+        \begin{figure}[H]
+            \includegraphics[width=0.5\linewidth]{RC} % Figure image
+            \caption{RC circuit with the circuit open}
+        \end{figure}
+        \subsection{Time Constant}
+        In the following equations, the time constant is denoted by $\tau$ and is equal to $RC$. The time constant determines how quickly the capacitor charges or discharges and how quickly the current decreases\\
+        $$\tau = RC$$
+        \subsection{Charging}
+        We use lowercase letters for changing variables.\\
+        $$q = C\mathcal{E} (1 - e^{\frac{-t}{RC}})$$
+        Where $C\mathcal{E}$ is the final charge when $t \rightarrow \infty$\\
+        $$i = \frac{dq}{dt} = \frac{\mathcal{E}}{R} e^{\frac{-t}{RC}}$$
+        Where $\frac{\mathcal{E}}{R}$ is the initial charge when $t = 0$\\
+        \subsection{Discharging}
+        $$q = Q_0 e^{\frac{-t}{RC}}$$
+        $$i = \frac{dq}{dt} = \frac{-Q_0}{RC} e^{\frac{-t}{RC}}$$
+        Where $\frac{-Q_0}{RC}$ is the initial charge when $t = 0$\\
+
+    %\section{Power Distribution Systems}
 % Conceptual Unit 2
     \section{Unit 2 Conceptual Questions}
-    Which setup would dissipate more power: a short-circuit with two identical batteries in parallel or in series?\\
+    Question 1\\
     \switchocg{Lu2q1}{Show Answer}\\
     \begin{ocg}{Unit 2 Question 1}{Lu2q1}{off}
-        This is the Layer's content.
+        Answer to question 1
     \end{ocg}
 \end{document}
